@@ -53,10 +53,11 @@ a {
 	text-align: left;
 	background: url(../images/maskheroimg.jpg) no-repeat center center fixed;
 	background-size: cover;
-	height: 400px;
-	width:100%;
+	height: 100%;
+/*	width:100%;*/
 	padding-top: 50px;
 	padding-left: 200px;
+	padding-bottom: 300px;
 }
 
 
