@@ -1,0 +1,67 @@
+body {
+	margin:0;
+}
+
+/*header {
+
+}*/
+
+div {
+	display: block;
+	text-align: center;
+}
+
+h1 {
+	font-family: helvetica, sans-serif;
+	text-transform: uppercase;
+	margin:0;
+}
+
+h3 {
+	color: #F4C038;
+	font-family: helvetica, sans-serif;
+}
+
+p {
+	font-family: helvetica, sans-serif;
+}
+
+ul {
+	font-family: helvetica, sans-serif;
+	list-style-type: none;
+	font-weight: bold;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding:0px;
+}
+
+a {
+	color:#F4C038;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+#container {
+	max-width:500px;
+	margin: auto;
+}
+#slogan {
+	font-style: italic;
+}
+
+#hero {
+	text-align: left;
+	background: url(../images/maskheroimg.jpg) no-repeat center center fixed;
+	background-size: cover;
+	height: 400px;
+	width:100%;
+	padding-top: 50px;
+	padding-left: 200px;
+}
+
+
+/*#backgroundimage {
+	background: url(../images/maskheroimg.jpg) no-repeat center center fixed;
+	background-size: cover;
+	height:200px;
+}*/
