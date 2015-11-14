@@ -1,0 +1,91 @@
+@font-face {
+	font-family: "Luna";
+	src: url("../fonts/luna.ttf");
+}
+@font-face {
+	font-family: "Americana";
+	scr: url("../fonts/americana.ttf");
+}
+
+body {
+	margin:0;
+	background: url(../images/brickwall.jpg) no-repeat fixed;
+}
+
+/*header {
+
+}*/
+
+div {
+	display: block;
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Luna', script;
+	text-transform: lowercase;
+	font-size: 3em;
+	line-height: 1.5em;
+	margin:0;
+}
+
+h3 {
+	color: #F4C038;
+	font-family: 'Americana', sans-serif;
+	text-transform: uppercase;
+	font-size: 2em;
+}
+
+p {
+	font-family: helvetica, sans-serif;
+}
+
+ul {
+	font-family: helvetica, sans-serif;
+	list-style-type: none;
+	font-weight: bold;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding:0px;
+}
+
+a {
+	color:#F4C038;
+	font-weight:bold;
+	font-style: italic;
+	text-decoration:none;
+}
+
+.bodycard{
+	margin:3em;
+	background: #fbf8f1;
+	padding: 2em;
+	box-shadow: 5px 5px 20px 3px #222
+}
+
+#container {
+	max-width:500px;
+	margin: auto;
+}
+#oriella {
+	padding-left:1em;
+}
+#slogan {
+	font-style: italic;
+}
+
+#hero {
+	text-align: left;
+	background: url(../images/maskheroimg.jpg) no-repeat fixed;
+	background-size: 100%;
+	padding-top: 3em;
+	padding-left: 8em;
+	padding-bottom: 3em;
+}
+
+
+/*#backgroundimage {
+	background: url(../images/maskheroimg.jpg) no-repeat center center fixed;
+	background-size: cover;
+	height:200px;
+}*/
