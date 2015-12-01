@@ -20,7 +20,7 @@ body {
 }
 
 header {
-	background-color: rgba(244, 192, 56, 0.85);
+/*	background-color: rgba(244, 192, 56, 0.85);*/
 	height: 50px;
 }
 
@@ -37,6 +37,23 @@ section {
 	padding: 1.5em;
 	box-shadow: 5px 5px 20px 3px #222
 }
+
+footer {
+	display: block;
+	height:50px;
+	background-color: #222;
+	margin-top:7px;
+}
+
+	footer > p{
+		font-family: 'Americana', sans-serif;
+		text-transform: uppercase;
+/*		line-height: 1.617em;*/
+		color:#777;
+		text-align:right;
+		padding-top: 25px;
+		padding-right: 40px;
+	}
 
 div {
 	display: block;
@@ -65,14 +82,6 @@ h3 {
 }
 
 nav {
-	float: right;
-	padding-top:15px;
-	padding-right: 10px;
-}
-
-p {
-	font-family: helvetica, sans-serif;
-	line-height: 1.617em;
 }
 
 ul {
@@ -85,19 +94,42 @@ ul {
 }
 
 a {
-	color:#F4C038;
-	font-weight:bold;
-	font-style: italic;
+/*	color:#F4C038;*/
+	font-family: 'Americana', sans-serif;
+	text-transform: uppercase;
+/*	font-weight:bold;*/
+/*	font-style: italic;*/
 	text-decoration:none;
 }
 
+.clearfix:after{
+	height:0;
+	font-size: 0;
+	visibility: hidden;
+	content: '  ';
+	display: block;
+	clear: both;
+}
+
 .navlinks{
-	color:black;
+	color:white;
+	padding:7px;
 	margin: 0px 10px;
+	background-color: rgba(255,255,255,.4);
 }
 
 .pagetitle{
 	float:left;
+}
+
+.projecticon{
+	width: 95%;
+}
+
+.bnavlinks{
+	color:#fdf6ee;
+	padding:7px;
+	margin: 0px 10px;
 }
 
 #oriella {
@@ -109,17 +141,49 @@ a {
 
 #hero {
 	text-align: left;
-	background: url(../images/maskheroimg.jpg) no-repeat fixed;
+	background: url(../images/maskheroimg.jpg) no-repeat top fixed;
 	background-color: #fdf6ee;
-	height: 100%;
+	height: 80%;
 	padding-top: 3em;
 	padding-left: 8em;
 }
 
+	#hero>p {
+		font-family: 'Americana', sans-serif;
+		text-transform: uppercase;
+		line-height: 1.617em;
+	}
+
 #navbar {
-	color:black;
+	float: right;
+	padding-top:15px;
+	padding-right: 10px;
 }
 
+#column1 {
+	float:left;
+	width: 33.3%;
+}
+
+#column2 {
+	float:left;
+	width: 33.3%;
+}
+
+#column3 {
+	float:left;
+	width: 33.3%;
+}
+
+#wrapper {
+	width:85%;
+	margin:auto;
+}
+
+#bottombar {
+	float:right;
+	padding: 10px 10px 0 0;
+}
 
 /*#backgroundimage {
 	background: url(../images/maskheroimg.jpg) no-repeat center center fixed;
