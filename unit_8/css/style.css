@@ -1,0 +1,255 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box
+}
+
+@font-face {
+	font-family: "Luna";
+	src: url("../fonts/luna.ttf");
+}
+@font-face {
+	font-family: "Americana";
+	src: url("../fonts/americana.ttf");
+}
+
+body {
+	margin:0;
+	background: url(../images/brickwall.jpg) no-repeat fixed;
+	font-size: 16px;
+	background-color:#222;
+}
+
+footer {
+	display: block;
+	height:50px;
+	background-color: #222;
+	margin-top:7px;
+}
+
+	footer > p{
+		font-family: 'Americana', sans-serif;
+		text-transform: uppercase;
+/*		line-height: 1.617em;*/
+		color:#777;
+		text-align:right;
+		padding-top: 25px;
+		padding-right: 40px;
+	}
+
+div {
+	display: block;
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Luna', script;
+	text-transform: lowercase;
+	font-size: 3em;
+	line-height: 1.5em;
+	color: #222;
+	margin:0;
+}
+
+h2 {
+	margin-top:0;
+	padding-top: 10px;
+	padding-left: 20px;
+}
+
+h3 {
+	color: #F4C038;
+	font-family: 'Americana', sans-serif;
+	text-transform: uppercase;
+	font-size: 2em;
+}
+
+nav {
+	height:40px;
+	position:absolute;
+	top:10px;
+	right:10px;
+/*	background-color:#F4C038;*/
+}
+
+a {
+/*	color:#F4C038;*/
+	font-family: 'Americana', sans-serif;
+	text-transform: uppercase;
+/*	font-weight:bold;*/
+/*	font-style: italic;*/
+	text-decoration:none;
+}
+
+figure {
+	position:relative;
+	overflow:hidden;
+	max-width: 450px;
+	margin: auto;
+}
+
+figcaption {
+	opacity:0;
+	position:absolute;
+	bottom:23px;
+	overflow:hidden;
+
+	font-family: 'Americana', sans-serif;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	color:#fdf6ee;
+	background-color:rgba(34,34,34,.75);
+	padding:15px;
+	width:90.5%;
+
+	left:50%;
+	-webkit-transform:translateX(-50%);
+	-moz-transform:translateX(-50%);
+	-o-transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
+	transform:translateX(-50%);
+
+	-webkit-transition:all 1s ease;
+     -moz-transition:all 1s ease;
+       -o-transition:all 1s ease;
+      -ms-transition:all 1s ease;
+          transition:all 1s ease;
+}
+
+figure:hover > figcaption {
+	display:block;
+	opacity:1;
+	overflow:hidden;
+}
+
+main {
+	display: block;
+}
+
+label {
+	display:none;
+	position:absolute;
+	top:15px;
+	right:15px;
+	font-size:1.5em;
+	font-family: 'Americana', sans-serif;
+}
+
+.clearfix:after{
+	height:0;
+	font-size: 0;
+	visibility: hidden;
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+.navlinks{
+	color:#F4C038;
+	padding:3px;
+	margin: 0px 7px;
+}
+
+.pagetitle{
+	float:left;
+}
+
+.column {
+	float:left;
+	width: 33.3%;
+	margin:auto;
+	margin-top: 20px;
+}
+
+.projecticon{
+	width: 90%;
+	margin-bottom:20px;
+/*	  -webkit-transition: filter .1s ease;
+     -moz-transition: filter .1s ease;
+       -o-transition: filter .1s ease;
+      -ms-transition: filter .1s ease;
+          transition: filter .1s ease;*/
+}
+/*	.projecticon:hover {
+		-webkit-filter: saturate(0);
+	}*/
+
+#oriella {
+	padding-left:1em;
+}
+#slogan {
+	color: #F4C038;
+	font-size:1.75em;
+	padding-top:.25em;
+	font-family: 'Americana', sans-serif;
+	text-transform: uppercase;
+	line-height: 1.617em;
+}
+
+#wrapper {
+	width:85%;
+	margin:auto;
+	position:relative;
+}
+
+#hero {
+	text-align: left;
+	background: url(../images/maskheroimg.jpg) no-repeat top fixed;
+	background-color: #fdf6ee;
+	height: 265px;
+	padding-top: 3em;
+	padding-left: 6em;
+	padding-bottom:1.5em;
+}
+
+#navbar {
+	float: right;
+	padding-top:10px;
+	padding-right: 10px;
+}
+
+#checkedbox {
+	display:none;
+}
+
+@media screen and (max-width: 768px) {
+	label {
+		display:block;
+	}
+	figcaption {
+		display:block;
+		position: relative;
+		width:100%;
+		opacity:1;
+		background-color: transparent;
+		padding-bottom:0;
+	}
+	.column {
+		float:none;
+		width: 100%;
+	}
+	.column:first-of-type {
+		margin-top: 20px;
+	}
+	.projecticon {
+		width:100%;
+	}
+	#navbar {
+		display:none;
+	}
+	#checkedbox:checked + #navbar{
+		display:block;
+	}
+	#hero {
+		padding-left: 3em;
+		background: url(../images/maskheroimg.jpg) no-repeat right top fixed;
+
+	}
+}
+
+@media screen and (max-width: 575px) {
+	#hero {
+		background:none;
+		background-color: #fdf6ee;
+	}
+}
