@@ -1,0 +1,250 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box
+}
+
+@font-face {
+	font-family: "Luna";
+	src: url("../fonts/luna.ttf");
+}
+@font-face {
+	font-family: "Americana";
+	src: url("../fonts/americana.ttf");
+}
+@font-face {
+	font-family: "OpenSans-Light";
+	src: url("../fonts/OpenSans-Light.ttf");
+}
+
+body {
+	margin:0;
+	font-size: 16px;
+/*	background-color:#fdf6ee;*/
+	background-color:#fff;
+}
+
+header {
+	background: url(../images/brickwall.jpg) no-repeat fixed;
+	height: 175px;
+	margin:0;
+}
+
+footer {
+	display: block;
+	height:50px;
+	background-color: #222;
+	margin-top:7px;
+}
+
+	footer > p{
+		font-family: 'Americana', sans-serif;
+		text-transform: uppercase;
+		color:#777;
+		text-align:right;
+		padding-top: 22px;
+		padding-right: 40px;
+	}
+
+div {
+	display: block;
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Luna', script;
+	text-transform: lowercase;
+	font-size: 3em;
+	line-height: 1.5em;
+	color: #fdf6ee;
+	padding-top: 62.5px;
+}
+
+h3 {
+	color: #F4C038;
+	font-family: 'Americana', sans-serif;
+	text-transform: uppercase;
+	font-size: 2em;
+}
+
+p {
+	color: #222;
+	font-family: 'OpenSans-Light', sans-serif;
+	font-size: .9em;
+	text-align: left;
+	line-height: 1.5em;
+	padding-top: 5px;
+}
+
+nav {
+	height:40px;
+	position:absolute;
+	top:10px;
+	right:10px;
+	padding:0;
+	margin: 0;
+}
+
+a {
+	font-family: 'Americana', sans-serif;
+	text-transform: uppercase;
+	text-decoration:none;
+}
+
+figure {
+	position:relative;
+	overflow:hidden;
+	max-width: 750px;
+}
+
+main {
+	float:left;
+	width: 69%;
+	margin-top: 20px;
+}
+
+aside {
+	width: 29%;
+	float: right;
+	background-color: #fdf6ee;
+	padding: 2%;
+	margin-top: 20px;
+}
+
+label {
+	display:none;
+	position:absolute;
+	top:20px;
+	right:20px;
+	font-size:1.5em;
+	font-family: 'Americana', sans-serif;
+	color:#fdf6ee;
+}
+
+.clearfix:after{
+	height:0;
+	font-size: 0;
+	visibility: hidden;
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+.navlinks{
+	color:white;
+	padding:0;
+	margin: 0px 8px;
+}
+
+.pagetitle{
+	float:left;
+}
+
+.column {
+	float:left;
+	width: 33.3%;
+}
+
+.projectpic{
+	width: 100%;
+	margin-bottom:20px;
+}
+
+.category {
+	font-family: 'Americana', sans-serif;
+	text-transform: uppercase;
+	color: #222;
+	font-size:1.25em;
+}
+
+#wrapper {
+	width:85%;
+	margin:auto;
+	position:relative;
+}
+
+#navbar {
+	float: right;
+	padding-top:10px;
+	padding-right: 10px;
+}
+
+#checkedbox {
+	display:none;
+}
+
+@media screen and (max-width: 768px) {
+	h1 {
+		font-size: 2.5em;
+	}
+	main {
+		width:58%;
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+	aside {
+		width: 38%;
+		margin-right: 10px;
+		margin-top: 10px;
+	}
+	label {
+		display:block;
+	}
+	figcaption {
+		opacity:1;
+	}
+	.column {
+		float:none;
+		width: 100%;
+	}
+	.column:first-of-type {
+		margin-top: 20px;
+	}
+	.projecticon {
+		width:100%;
+	}
+	#wrapper {
+		width: 100%;
+	}
+	#navbar {
+		display:none;
+		padding-top: 135px;
+	}
+	#checkedbox:checked + #navbar{
+		display:block;
+	}
+	#checkedbox:not(:checked) + #navbar{
+		display:none;
+	} 
+	#hero {
+		padding-left: 3em;
+		background: url(../images/maskheroimg.jpg) no-repeat right top fixed;
+
+	}
+}
+
+@media screen and (max-width: 575px) {
+	header {
+		height: 100px;
+	}
+
+	h1 {
+		font-size: 1.5em;
+		padding-top: 40px;
+	}
+
+	aside {
+		float:none;
+		width: 88%;
+		margin: auto;
+		margin-top: 15px;
+	}
+	main {
+		width: 100%;
+		margin-top: 10px;
+		margin-left:0;
+	}
+	.projectpic{
+		width: 90%;
+	}
+}
