@@ -32,7 +32,7 @@ header {
 
 footer {
 	display: block;
-	height:50px;
+	height:100px;
 	background-color: #222;
 	margin-top:7px;
 }
@@ -42,8 +42,8 @@ footer {
 		text-transform: uppercase;
 		color:#777;
 		text-align:right;
-		padding-top: 22px;
-		padding-right: 40px;
+		padding-top: 20px;
+		padding-right: 30px;
 	}
 
 div {
@@ -148,6 +148,12 @@ label {
 .projectpic{
 	width: 100%;
 	margin-bottom:20px;
+}
+
+.socialmedia {
+	display: inline;
+	width: 50px;
+	padding: 0px 10px;
 }
 
 .category {

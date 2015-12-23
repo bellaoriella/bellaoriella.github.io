@@ -20,6 +20,10 @@ body {
 	background-color:#222;
 }
 
+header {
+	position:relative;
+}
+
 footer {
 	display: block;
 	height:100px;
@@ -78,6 +82,7 @@ a {
 /*	font-weight:bold;*/
 /*	font-style: italic;*/
 	text-decoration:none;
+	cursor: pointer !important;
 }
 
 figure {
@@ -85,6 +90,15 @@ figure {
 	overflow:hidden;
 	max-width: 450px;
 	margin: auto;
+	cursor: pointer !important;
+}
+
+figure img{
+	cursor: pointer !important;
+}
+
+figure:hover{
+	cursor: pointer !important;
 }
 
 figcaption {
@@ -119,6 +133,7 @@ figure:hover > figcaption {
 	display:block;
 	opacity:1;
 	overflow:hidden;
+	cursor: pointer;
 }
 
 main {
@@ -158,11 +173,21 @@ label {
 	width: 33.3%;
 	margin:auto;
 	margin-top: 20px;
+	cursor: pointer !important;
 }
+	
+	.column figure,
+	.column figcaption
+	.column a,
+	 {
+		
+		cursor: pointer !important;
+	}
 
 .projecticon{
 	width: 90%;
 	margin-bottom:20px;
+	cursor: pointer !important;
 }
 .socialmedia {
 	display: inline;
