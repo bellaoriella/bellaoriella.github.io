@@ -12,6 +12,10 @@
 	font-family: "Americana";
 	src: url("../fonts/americana.ttf");
 }
+@font-face {
+	font-family: "OpenSans-Light";
+	src: url("../fonts/OpenSans-Light.ttf");
+}
 
 body {
 	margin:0;
@@ -85,6 +89,35 @@ a {
 	cursor: pointer !important;
 }
 
+aside {
+	width:40%;
+	float:left;
+}
+aside>div {
+	background-color: #F4C038;
+	padding: 15px;
+	margin-top: 1em;
+	margin-bottom: .9em;
+/*	max-width:450px;*/
+	font-size: 16px;
+}
+	aside>div>h3 {
+		color: #fdf6ee;
+		font-family: 'Americana', sans-serif;
+		text-transform: uppercase;
+		font-size: 2em;
+		font-weight:normal;
+		text-align:left;
+		padding-bottom:.5em;
+	}
+	aside>div>p {
+		color: #222;
+		font-family: 'OpenSans-Light', sans-serif;
+		font-size: .9em;
+		text-align: left;
+		line-height: 1.5em;
+	}
+
 figure {
 	position:relative;
 	overflow:hidden;
@@ -134,10 +167,6 @@ figure:hover > figcaption {
 	opacity:1;
 	overflow:hidden;
 	cursor: pointer;
-}
-
-main {
-	display: block;
 }
 
 label {
@@ -233,6 +262,35 @@ label {
 	display:none;
 }
 
+#polaroids {
+	width:50%;
+	float:right;
+/*	overflow:hidden;*/
+}
+	#polaroids img {
+		width:75%;
+/*		max-width:330px;*/
+		display:block;
+	/*	margin-left:10px;*/
+		margin-bottom:-80px;
+	}
+		#polaroids img:nth-child(1) {
+			float: right;
+		}
+		#polaroids img:nth-child(2) {
+			float: left;
+		}
+		#polaroids img:nth-child(3) {
+			float: right;
+			margin-bottom:0px;
+		}
+
+#insta {
+	background-color: #F4C038;
+	padding: 15px;
+	margin-top: 1em;
+}
+
 @media screen and (max-width: 768px) {
 	body {
 		background: url(../images/brickwall.jpg) repeat fixed;
@@ -240,6 +298,17 @@ label {
 	label {
 		display:block;
 	}
+	aside {
+		width:100%;
+		display:block;
+		float:none;
+		}
+		aside>div>h3 {
+			text-align: center;
+		}
+		aside>div>p {
+			text-align: center;
+		}
 	figcaption {
 		display:block;
 		position: relative;
@@ -269,6 +338,25 @@ label {
 		background: url(../images/maskheroimg.jpg) no-repeat right top fixed;
 
 	}
+	#polaroids {
+		float:none;
+		width:100%;
+		margin-top:.75em;
+	}
+		#polaroids img {
+			display:block;
+		/*	margin-left:10px;*/
+			margin-bottom:0px;
+		}
+		#polaroids img:nth-child(1) {
+			width:33.3%;
+		}
+		#polaroids img:nth-child(2) {
+			width:33.3%;
+		}
+		#polaroids img:nth-child(3) {
+			width:33.3%;
+		}
 }
 
 @media screen and (max-width: 575px) {
@@ -289,4 +377,14 @@ label {
 		margin:auto;
 		font-size: 1.6em;
 	}
+	#polaroids img:nth-child(1) {
+			width:100%;
+		}
+		#polaroids img:nth-child(2) {
+			width:100%;
+		}
+		#polaroids img:nth-child(3) {
+			width:100%;
+		} 
+
 }

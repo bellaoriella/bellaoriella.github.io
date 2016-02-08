@@ -28,7 +28,28 @@ header {
 	background: url(../images/brickwall.jpg) no-repeat fixed;
 	height: 175px;
 	margin:0;
+	position:relative;
 }
+
+	header>a>img {
+		max-width: 35px;
+	}
+
+	#backarrow {
+		position:absolute;
+		left:15px;
+		bottom:55px;
+		cursor:pointer;
+		opacity:.75;
+	}
+
+	#forwardarrow {
+		position:absolute;
+		right:15px;
+		bottom:55px;
+		cursor:pointer;
+		opacity:.75;
+	}
 
 footer {
 	display: block;
@@ -54,10 +75,10 @@ div {
 h1 {
 	font-family: 'Luna', script;
 	text-transform: lowercase;
-	font-size: 3em;
+	font-size: 2.5em;
 	line-height: 1.5em;
 	color: #fdf6ee;
-	padding-top: 62.5px;
+	padding-top: 67.5px;
 }
 
 h3 {
@@ -181,7 +202,8 @@ label {
 
 @media screen and (max-width: 768px) {
 	h1 {
-		font-size: 2.5em;
+		font-size: 2.15em;
+		padding-top: 77px;
 	}
 	main {
 		width:58%;
@@ -233,6 +255,19 @@ label {
 	header {
 		height: 100px;
 	}
+			header>a>img {
+				max-width: 25px;
+			}
+
+			#backarrow {
+				left:15px;
+				bottom:28px;
+			}
+
+			#forwardarrow {
+				right:15px;
+				bottom:28px;
+			}
 
 	h1 {
 		font-size: 1.5em;
