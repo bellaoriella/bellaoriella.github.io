@@ -189,9 +189,10 @@ label {
 }
 
 .navlinks{
-	color:#F4C038;
-	padding:3px;
+	color:#222;
+	padding: 8px 8px 6px 8px;
 	margin: 0px 7px;
+	background-color: rgba(253,246,238,.75);
 }
 
 .pagetitle{
@@ -301,7 +302,7 @@ label {
 	background-color: rgba(253,246,238,.75);
 	padding: 15px;
 	margin-top: 1em;
-	visibility:hidden;
+	visibility:collapse;
 }
 
 @media screen and (max-width: 768px) {
@@ -372,7 +373,7 @@ label {
 		}
 
 	#instadesktop {
-		visibility:hidden;
+		visibility:collapse;
 	}
 
 	#instamobile {
