@@ -69,6 +69,7 @@ h3 {
 	font-family: 'Americana', sans-serif;
 	text-transform: uppercase;
 	font-size: 2em;
+	font-weight:normal;
 }
 
 nav {
@@ -285,10 +286,22 @@ label {
 			margin-bottom:0px;
 		}
 
-#insta {
+#inspotitle {
+	font-size: 4em;
+	margin-top: 30px;
+}
+
+#instadesktop {
 	background-color: rgba(253,246,238,.75);
 	padding: 15px;
 	margin-top: 1em;
+}
+
+#instamobile {
+	background-color: rgba(253,246,238,.75);
+	padding: 15px;
+	margin-top: 1em;
+	visibility:hidden;
 }
 
 @media screen and (max-width: 768px) {
@@ -357,7 +370,14 @@ label {
 		#polaroids img:nth-child(3) {
 			width:33.3%;
 		}
-}
+
+	#instadesktop {
+		visibility:hidden;
+	}
+
+	#instamobile {
+		visibility:visible;
+	}
 
 @media screen and (max-width: 575px) {
 	body {
