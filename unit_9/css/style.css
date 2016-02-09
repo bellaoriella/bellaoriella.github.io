@@ -286,7 +286,7 @@ label {
 		}
 
 #insta {
-	background-color: #F4C038;
+	background-color: rgba(253,246,238,.75);
 	padding: 15px;
 	margin-top: 1em;
 }
