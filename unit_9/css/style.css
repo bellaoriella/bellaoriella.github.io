@@ -294,17 +294,10 @@ label {
 	margin-top: 30px;
 }
 
-#instadesktop {
+#insta{
 	background-color: rgba(253,246,238,.75);
 	padding: 15px;
 	margin-top: 1em;
-}
-
-#instamobile {
-	background-color: rgba(253,246,238,.75);
-	padding: 15px;
-	margin-top: 1em;
-	visibility:collapse;
 }
 
 @media screen and (max-width: 768px) {
@@ -373,14 +366,6 @@ label {
 		#polaroids img:nth-child(3) {
 			width:33.3%;
 		}
-
-	#instadesktop {
-		visibility:collapse;
-	}
-
-	#instamobile {
-		visibility:visible;
-	}
 
 @media screen and (max-width: 575px) {
 /*	body {
