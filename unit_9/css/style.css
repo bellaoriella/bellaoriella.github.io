@@ -300,9 +300,7 @@ label {
 }
 
 @media screen and (max-width: 768px) {
-/*	body {
-		background: url(../images/brickwall.jpg) repeat fixed;
-	}*/
+
 	label {
 		display:block;
 	}
@@ -367,15 +365,11 @@ label {
 		}
 
 @media screen and (max-width: 575px) {
-/*	body {
-		background: url(../images/brickwall.jpg) repeat;
-	}*/
 	h1 {
 		font-size: 2.5em;
 	}
 	#hero {
-		background:url(../images/brickwall.jpg) no-repeat top top fixed;
-/*		background-color: #222;*/
+		background: url(../images/smallbrick.jpg) no-repeat top right fixed;
 		padding-left:2em;
 		padding-top:1.85em;
 		height: 200px;
