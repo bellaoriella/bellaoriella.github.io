@@ -54,8 +54,7 @@ h1 {
 	text-transform: lowercase;
 	font-size: 3em;
 	line-height: 1.5em;
-	/*color: #222;*/
-	color:#f4c038;
+	color:#fdf6ee;
 	margin:0;
 }
 
@@ -344,7 +343,7 @@ label {
 	}
 	#hero {
 		padding-left: 3em;
-		background: url(../images/maskheroimg.jpg) no-repeat right top fixed;
+		background: url(../images/maskheroimg3.jpg) no-repeat top right fixed;
 
 	}
 	#polaroids {
