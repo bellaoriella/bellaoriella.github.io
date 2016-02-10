@@ -322,6 +322,7 @@ label {
 		opacity:1;
 		background-color: transparent;
 		padding-bottom:0;
+		color:#222;
 	}
 	.column {
 		float:none;
