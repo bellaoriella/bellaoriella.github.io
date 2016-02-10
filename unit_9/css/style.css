@@ -19,9 +19,9 @@
 
 body {
 	margin:0;
-	background: url(../images/brickwall.jpg) no-repeat fixed;
+/*	background: url(../images/brickwall.jpg) no-repeat fixed;*/
 	font-size: 16px;
-	background-color:#222;
+	background-color:#fdf6ee;
 }
 
 header {
@@ -54,7 +54,8 @@ h1 {
 	text-transform: lowercase;
 	font-size: 3em;
 	line-height: 1.5em;
-	color: #222;
+	/*color: #222;*/
+	color:#f4c038;
 	margin:0;
 }
 
@@ -177,6 +178,7 @@ label {
 	right:15px;
 	font-size:1.5em;
 	font-family: 'Americana', sans-serif;
+	color: #fdf6ee;
 }
 
 .clearfix:after{
@@ -230,8 +232,8 @@ label {
 	padding-left:1em;
 }
 #slogan {
-	color: #F4C038;
-	font-size:1.75em;
+	color: #fdf6ee;
+	font-size:1.875em;
 	padding-top:.25em;
 	font-family: 'Americana', sans-serif;
 	text-transform: uppercase;
@@ -306,9 +308,9 @@ label {
 }
 
 @media screen and (max-width: 768px) {
-	body {
+/*	body {
 		background: url(../images/brickwall.jpg) repeat fixed;
-	}
+	}*/
 	label {
 		display:block;
 	}
@@ -381,15 +383,15 @@ label {
 	}
 
 @media screen and (max-width: 575px) {
-	body {
+/*	body {
 		background: url(../images/brickwall.jpg) repeat;
-	}
+	}*/
 	h1 {
 		font-size: 2.5em;
 	}
 	#hero {
-		background:none;
-		background-color: #fdf6ee;
+		background:url(../images/brickwall.jpg) no-repeat top top fixed;
+/*		background-color: #222;*/
 		padding-left:2em;
 		padding-top:1.85em;
 		height: 200px;
